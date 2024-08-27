@@ -13,7 +13,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     EditText edtMsg;
     Button btnMsgCurta, btnMsgLonga, btnMsgPerson;
@@ -33,12 +33,13 @@ public class MainActivity extends AppCompatActivity {
         btnMsgCurta = findViewById(R.id.btnMsgCurta);
         btnMsgLonga = findViewById(R.id.btnMsgLonga);
         btnMsgPerson = findViewById(R.id.btnMsgPerson);
+        btnMsgCurta.setOnClickListener(this);
+        btnMsgLonga.setOnClickListener(this);
+        btnMsgPerson.setOnClickListener(this);
 
 
     }
 
-
-    @Override
     public void onClick(View v) {
         String mens = edtMsg.getText().toString();
         if (v == btnMsgCurta) {
