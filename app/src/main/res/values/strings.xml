@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppToast</string>
+    <string name="edtMsg">Digite a Mensagem</string>
+    <string name="btnMsgCurta">Mensagem Curta</string>
+    <string name="btnMsgLonga">Mensagem Longa</string>
+    <string name="btnMsgPerson">Mensagem Personalizada</string>
+
+</resources>
